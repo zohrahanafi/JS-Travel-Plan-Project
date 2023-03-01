@@ -1,0 +1,239 @@
+:root {
+    --font_headers: 'Itim', cursive;
+    --font_parag: 'Montserrat Alternates', sans-serif;
+    --font_attached: 'Dancing Script', cursive;
+    /* colors */
+    --color_blue_sky: #DAE7EC;
+    --color_blue: #006060;
+    --color_lightBlue: #a0c4ff;
+    --color_dark: #050505;
+    --color_darkGrey: #40403E;
+    --color_lightGrey: #9C9C9C;
+    --color_lightWhite: #EBEBEB;
+    --color_red: #e63946;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font_parag);
+    color: var(--color_darkGrey);
+
+}
+.row{
+    margin-bottom: 2%
+}
+/* headers */
+.row .header {
+    margin-top: 4%;
+    text-align: center;
+    font-family: var(--font_headers);
+    display: block;
+    background-color: rgba(160, 196, 255, 0.2);
+}
+/* title, website logo */
+.title{
+    font-family: var(--font_headers);
+    font-size: 1.2em;
+}
+.title .title_cap{
+color: var(--color_lightBlue);
+}
+#header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/pexels-leah-kelley-3935702.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+nav .navbar-brand {
+    margin-left: 5%;
+    font-size: 2em;
+}
+
+nav .navbar-brand span {
+    color: var(--color_lightBlue);
+    font-family: var(--font_headers);
+}
+
+nav li a {
+    font-weight: 400;
+}
+
+nav li a:hover,
+.active {
+    color: var(--color_lightBlue) !important;
+    border-top: 1px solid var(--color_lightBlue);
+}
+
+#header .nav_content {
+    text-align: center;
+    color: var(--color_lightWhite);
+    margin-top: 6%;
+    font-weight: 300;
+}
+
+#header .nav_content h1 {
+    color: var(--color_lightBlue);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+#header .nav_content .text_p {
+    width: 70%;
+    margin: auto;
+    line-height: 1.5;
+    margin: 2.5% auto;
+}
+
+#header .nav_content p span {
+    color: var(--color_lightBlue);
+    font-weight: 450;
+    border-bottom: 1px solid var(--color_lightBlue);
+}
+
+#header .nav_content a {
+    display: inline-block;
+    margin-top: 3%;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--font_headers);
+    font-weight: 400;
+    font-size: 1.2em;
+    background-color: var(--color_lightBlue);
+    color: var(--color_lightWhite);
+    border: 2px solid var(--color_lightBlue);
+    border-radius: 16px;
+    padding: 15px 12px;
+}
+
+/* main */
+main{
+    margin-top: 5%;
+}
+
+/* deals section */
+#deals .card{
+    text-align: center;
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+.card-title{
+font-family: var(--font_headers);
+}
+.previous_price{
+    text-decoration: line-through !important;
+    font-size:0.8em;
+}
+.new_price{
+    font-size:1.1em;
+    color: var(--color_red);
+    font-weight: 300;
+}
+#deals a{
+    display: block;
+    font-family: var(--font_headers);
+    text-decoration: none;
+    color: var(--color_lightBlue);
+}
+
+/* how it works section */
+#how_it_works{
+    text-align: center;
+}
+#how_it_works col{
+    margin:2%
+}
+#how_it_works i{
+display: block;
+color: var(--color_lightBlue);
+padding: 15px;
+font-size: 3em;
+}
+#how_it_works h3{
+    font-family: var(--font_headers);
+}
+#how_it_works p{
+    font-size: 0.8em;
+    text-align: justify;
+    margin-left: 3px;
+}
+/* about us section */
+#about_us .col-md-6 img{
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    border-radius: 16px;
+}
+#about_us  .content{
+    margin-top: 6%;
+    margin-bottom: 3%;
+    text-align: justify;
+    font-size: 0.9em;
+}
+
+/* popular destination */
+#popular_destination .clo{
+    position: relative;
+}
+#popular_destination .clo .des{
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top :30%;
+    left: 10%;
+}
+#popular_destination .clo .des h2{
+    font-family: var(--font_headers);
+    font-size: 3em;
+}
+#popular_destination .clo .des h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+#popular_destination img{
+    width: 100%;
+    height: auto;
+    height: 400px;
+    border-radius: 16px;
+    opacity: 0.9;
+}
+#popular_destination .row_2 img{
+    height: 250px;
+
+}
+/* footer */
+footer{
+    margin-top: 10%;
+    text-align: center;
+    font-size: 0.8em;
+}
+footer i{
+    text-align: center;
+    color: var(--color_lightBlue);
+    font-size: 2.5em;
+}
+footer h3{
+font-family: var(--font_headers);
+}
+footer .social_media i{
+    margin-left: 2%;
+}
+footer .social_media i:hover{
+    color: var(--color_darkGrey);
+}
+footer .copyright{
+background-color: var(--color_darkGrey);
+color: var(--color_lightWhite);
+}
+footer .row:nth-child(2){
+    margin-bottom: 0;
+}

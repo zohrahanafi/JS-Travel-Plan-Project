@@ -1,0 +1,297 @@
+<!--
+      JavaScript Travel Website Project
+
+      Author: ZOHRA HANAFI
+      Date:   2/17/2023
+
+      Filename: index.html
+   -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--  CSS FILE -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Itim&family=Montserrat+Alternates:wght@300&display=swap"
+    rel="stylesheet">
+  <title>DisVoy home</title>
+</head>
+
+<body>
+  <header id="header">
+    <nav class="navbar navbar-expand-lg  fixed-top" id="navigation">
+      <div class="container-fluid" style="background-color: #fff;margin: 0; padding: 0;">
+        <a class="navbar-brand" href="#"><span>D</span>is<span>V</span>oy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#deals">Deals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#how_it_works">How it works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about_us">About us</a> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#popular_destination">Popular destination</a> 
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="nav_content container" id="header">
+      <h1>Get ready to explore the <span> USA </span>.</h1>
+      <div class="text_p">
+        <p> Ready to embark on an unforgettable journey? Look no further than our travel website, where you can explore
+          a world of incredible destinations in the USA, exciting activities, and unforgettable experiences. Whether
+          you're dreaming of
+          a tropical escape, an urban adventure, or a scenic road trip, we've got everything you need to plan your
+          perfect getaway. So why wait? Let's <span>start planning your next trip today!</span></p>
+      </div>
+      <a href="plan.html">Plan my Next trips</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Deals section -->
+    <section class="container" id="deals">
+      <div class="row ">
+        <div class="row header">
+          <h1>Recent Deals</h1>
+        </div>
+        <div class="row">
+          <!-- card: -->
+          <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/new york city.jpg" class="card-img-top img-fluid" alt="new york">
+                <div class="card-body">
+                  <h5 class="card-title">New York City, NY</h5>
+                  <p class="card-text">10 Days for <span class="previous_price">$2,500</span> <span
+                      class="new_price">$2,000</span></p>
+                  <a href="plan.html">More Info!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/San Framcisco, CA.jpg" class="card-img-top img-fluid" alt="California">
+                <div class="card-body">
+                  <h5 class="card-title">San Francisco, CA</h5>
+                  <p class="card-text">4 Days for <span class="previous_price">$1,700</span> <span
+                      class="new_price">$1,200</span></p>
+                  <a href="plan.html">More Info!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/Manhattan Beach, United States.jpg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Manhattan Beach, CA</h5>
+                  <p class="card-text">8 Days for <span class="previous_price">$2,200</span> <span
+                      class="new_price">$1,840</span></p>
+                  <a href="plan.html">More Info!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/Seven Mile Bridge, Key West, United States.jpg" class="card-img-top img-fluid"
+                  alt="Key West">
+                <div class="card-body">
+                  <h5 class="card-title">Key West, Florida</h5>
+                  <p class="card-text">5 Days for <span class="previous_price">$1,300</span> <span
+                      class="new_price">$999.99</span></p>
+                  <a href="plan.html">More Info!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- how it works section -->
+    <section class="container" id="how_it_works">
+      <div class="row">
+        <div class="row header">
+          <h1>How it works</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-4 g-4">
+            <i class="fa-solid fa-mountain-sun"></i>
+            <h3>Discover</h3>
+            <p>Explore unique and thrilling travel experiences that will leave you with unforgettable memories.</p>
+          </div>
+          <div class="col-md-4 g-4">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <h3>Save</h3>
+            <p>Unlock exclusive deals and discounts to save big on flights, hotels, activities, and more.</p>
+          </div>
+          <div class="col-md-4 g-4">
+            <i class="fa-solid fa-plane-departure"></i>
+            <h3>Personalize</h3>
+            <p>Let us help you create the trip of your dreams with personalized recommendations for destinations,
+              accommodations, and activities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about us section -->
+    <section class="container" id="about_us">
+      <div class="row">
+        <div class="row header">
+          <h1>About us</h1>
+        </div>
+        <!-- the content: -->
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/Oljato-Monument Valley, AZ.jpg" class="img-fluid mx-auto d-block" alt="mounrain AZ">
+          </div>
+          <div class="col-md-6 content">
+            <p>Welcome to <span class="title"><span class="title_cap">D</span>is<span
+                  class="title_cap">V</span>oy</span>, your ultimate destination for all things travel in the USA!
+            </p>
+            <p>At <span class="title"><span class="title_cap">D</span>is<span class="title_cap">V</span>oy</span>, we
+              are passionate about helping you explore the beauty and
+              diversity of this amazing
+              country. Whether you are looking for a fun-filled family vacation, a romantic getaway, or an adventurous
+              solo trip, we've got you covered.</p>
+            <p>Our team of travel experts has scoured the length and breadth of the USA to curate the best travel
+              experiences for you. From the sun-kissed beaches of California to the majestic mountains of Colorado, from
+              the bustling city life of New York to the serene countryside of Vermont, we have something for every
+              traveler.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 content">
+            <p>Our website is packed with valuable information, including travel guides, itineraries, reviews, and
+              insider tips. Whether you're a first-time visitor or a seasoned traveler, our goal is to make your travel
+              planning process as easy and stress-free as possible.</p>
+            <p>And the best part? By creating an account and becoming a member of <span class="title"><span
+                  class="title_cap">D</span>is<span class="title_cap">V</span>oy</span>,
+              you'll have access to
+              even more exclusive content and perks. So what are you waiting for? Sign up today and let us help you
+              discover the wonders of the USA!</p>
+          </div>
+          <div class="col-md-6">
+            <img src="img/new york 2.jpg" class="img-fluid mx-auto d-block" alt="New york">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Destinations section -->
+    <section class="container" id="popular_destination">
+      <div class="row">
+        <div class="row header">
+          <h1>Popular Destinations</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-8 clo">
+            <img src="img/San Framcisco, CA.jpg">
+            <div class="des">
+              <h2>Explore</h2>
+              <h3>San Framcisco</h3>
+            </div>
+          </div>
+          <div class="col-md-4 clo">
+            <img src="img/new york city.jpg">
+            <div class="des">
+              <h2>Uncover</h2>
+              <h3>New York</h3>
+            </div>
+          </div>
+        </div>
+        <!-- 2nd row -->
+        <div class="row row_2">
+          <div class="col-md-4 clo">
+            <img src="img/california ca.jpg">
+            <div class="des">
+              <h2>Discover</h2>
+              <h3>San Framcisco</h3>
+            </div>
+          </div>
+          <div class="col-md-4 clo">
+            <img src="img/pexels-leah-kelley-3935702.jpg">
+            <div class="des">
+              <h2>Paradise</h2>
+              <h3>New York</h3>
+            </div>
+          </div>
+          <div class="col-md-4 clo">
+            <img src="img/Seven Mile Bridge, Key West, United States.jpg">
+            <div class="des">
+              <h2>Adventure</h2>
+              <h3>New York</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="row container">
+      <div class="col-md-3">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Find us</h3>
+        <p>Address</p>
+        <p>City, State, USA</p>
+      </div>
+      <div class="col-md-3">
+        <i class="fa-solid fa-phone-volume"></i>
+        <h3>Call us</h3>
+        <p>+1 999 999 9999</p>
+      </div>
+      <div class="col-md-3">
+        <i class="fa-solid fa-envelope"></i>
+        <h3>Email us</h3>
+        <p>DevVoy@email.com</p>
+      </div>
+      <div class="col-md-3">
+        <h3>Follow us</h3>
+        <p>Be Inspired</p>
+        <div class="social_media">
+          <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+          <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="row copyright">
+      <p>&copy; 2023 DisVoy. All rights reserved.</p>
+      <p>Made by Zohra HANAFI</p>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>

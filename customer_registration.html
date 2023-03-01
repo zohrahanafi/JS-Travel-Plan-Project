@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  CSS FILE -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/customer_reg.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Itim&family=Montserrat+Alternates:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Register</title>
+
+    <style>
+        #errorText {
+            border: 1px solid red;
+            background: rgb(255, 233, 233);
+            width: 80%;
+            margin: 0 auto;
+            padding: 10px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg  fixed-top" id="navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><span>D</span>is<span>V</span>oy</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Deals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">How it works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#index.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Popular destination</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="customer_reg">
+        <div class="form_div">
+            <h1>registration form</h1>
+            <form class="reg_form" action="congratulation.html" novalidate="novalidate" id="contactinfo">
+                <div id="errorText"></div>
+                <div class="row">
+                    <input type="text" placeholder="First name*" id="fName" name="first_name">
+                    <input type="text" placeholder="Last name*" id="lName" name="last_name">
+                </div>
+                <div class="row">
+                    <input type="email" placeholder="Email * " id="user_email" name="email">
+                </div>
+                <div class="row">
+                    <textarea name="message" rows="4" cols="50" placeholder="Message"></textarea>
+                </div>
+                <div class="row">
+                    <button type="submit" class="btn-submit">Register</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="row container">
+          <div class="col-md-3">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Find us</h3>
+            <p>Address</p>
+            <p>City, State, USA</p>
+          </div>
+          <div class="col-md-3">
+            <i class="fa-solid fa-phone-volume"></i>
+            <h3>Call us</h3>
+            <p>+1 999 999 9999</p>
+          </div>
+          <div class="col-md-3">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>Email us</h3>
+            <p>DevVoy@email.com</p>
+          </div>
+          <div class="col-md-3">
+            <h3>Follow us</h3>
+            <p>Be Inspired</p>
+            <div class="social_media">
+              <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+              <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row copyright">
+          <p>&copy; 2023 DisVoy. All rights reserved.</p>
+          <p>Made by Zohra HANAFI</p>
+        </div>
+      </footer>
+
+    <script src="js/script_registration.js"></script>
+</body>
+
+</html>

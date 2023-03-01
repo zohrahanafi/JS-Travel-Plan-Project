@@ -1,0 +1,96 @@
+:root {
+    --font_headers: 'Itim', cursive;
+    --font_parag: 'Montserrat Alternates', sans-serif;
+    --font_attached: 'Dancing Script', cursive;
+    /* colors */
+    --color_blue_sky: #DAE7EC;
+    --color_blue: #006060;
+    --color_lightBlue: #a0c4ff;
+    --color_dark: #050505;
+    --color_darkGrey: #40403E;
+    --color_lightGrey: #9C9C9C;
+    --color_lightWhite: #EBEBEB;
+    --color_red: #e63946;
+}
+
+.customer_reg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/cake\ usa.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.form_div{
+    background-color: var(--color_blue_sky);
+    width: 60%;
+    height: 80%;
+    padding: 3%;
+    flex-direction: column;
+    border-radius: 12px;
+}
+.form_div h1{
+    font-family: var(--font_headers);
+    font-size: 3em;
+    text-transform: capitalize;
+    text-align: center;
+    word-spacing: 3px;
+    color: var(--color_lightBlue);
+    padding: 2px;
+}
+.reg_form{
+position: relative;
+}
+form input, textarea{
+    border-radius: 2px;
+    border: 1px solid var(--color_lightBlue);
+    font-size: 1.1em;
+    color: var(--color_darkGrey);
+    padding: 10px;
+    margin: 1%;
+    font-family: var(--font_parag);
+    color: var(--color_darkGrey);
+    border-radius: 10px;
+}
+form input:focus, textarea:focus{
+    transform: scale(1.05);
+    font-weight: bold;
+}
+ #lName{
+    width: 45%;
+    position: absolute;
+    right: 0;
+}
+#fName{
+    width: 45%;
+}
+#user_email, textarea{
+    width: 98%;
+}
+.btn-submit{
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid var(--color_lightBlue);
+    letter-spacing: 1.1px;
+    font-family: var(--font_headers);
+    padding: 12px;
+    word-spacing: 2px;
+    font-size: 1.2em;
+    margin-top: 3%;
+    background-color: var(--color_lightBlue);
+    color: var(--color_blue_sky);
+}
+.btn-submit:hover{
+    cursor: pointer;
+    color: var(--color_lightBlue);
+    background-color: white;
+    transform: scale(1.05);
+}
+

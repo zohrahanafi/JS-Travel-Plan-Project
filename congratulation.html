@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- font awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!--  CSS FILE -->
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="css/styles.css">
+   <!-- fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Itim&family=Montserrat+Alternates:wght@300&display=swap"
+      rel="stylesheet">
+   <title>Congratulations</title>
+   <style>
+      :root {
+         --font_headers: 'Itim', cursive;
+         --font_parag: 'Montserrat Alternates', sans-serif;
+         --font_attached: 'Dancing Script', cursive;
+         /* colors */
+         --color_blue_sky: #DAE7EC;
+         --color_blue: #006060;
+         --color_lightBlue: #a0c4ff;
+         --color_dark: #050505;
+         --color_darkGrey: #40403E;
+         --color_lightGrey: #9C9C9C;
+         --color_lightWhite: #EBEBEB;
+         --color_red: #e63946;
+      }
+
+     
+
+      .results {
+         text-align: center;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         height: 90vh;
+      }
+
+      .results h1 {
+         font-family: var(--font_headers);
+         font-size: 4em;
+         margin-bottom: 3%;
+         margin-top: 2%;
+      }
+
+      .name {
+         text-transform: uppercase;
+         color: var(--color_lightBlue);
+      }
+
+      .results h2,
+      h3,
+      h4 {
+
+         margin-bottom: 3%;
+      }
+
+      .button_ {
+         background-color: var(--color_lightBlue) !important;
+         border-color: var(--color_lightBlue) !important;
+         padding: 10px !important;
+         font-family: var(--font_headers);
+         letter-spacing: 2px;
+         margin-bottom: 3%;
+         color: #DAE7EC;
+      }
+   </style>
+</head>
+
+<body>
+   <header>
+      <nav class="navbar navbar-expand-lg  fixed-top" id="navigation">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="#"><span>D</span>is<span>V</span>oy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+               aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.html">Deals</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.html">How it works</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#index.html">About us</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.html">Popular destination</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <main>
+      <section class="row container">
+         <div class="results row">
+            <script>
+               var formData = location.search;
+               formData = formData.substring(1, formData.length);
+               while (formData.indexOf("+") !== -1) {
+                  formData = formData.replace("+", " ");
+               }
+               formData = decodeURIComponent(formData);
+               var formArray = formData.split("&");
+               var first_name = formArray[0].substring(formArray[0].indexOf("=") + 1, formArray[0].length);
+               var last_name = formArray[1].substring(formArray[1].indexOf("=") + 1, formArray[1].length);
+               var todayDate = new Date();
+               let month = todayDate.toLocaleString('default', { month: 'long' });
+               document.write("<h1> Congratulations <span class='name'>" + first_name + " " + last_name + "</span> !!</h1>");
+               document.write("<h2> You regestered on " + month + "-" + todayDate.getDate() + "-" + todayDate.getFullYear() + ".</h2>");
+               document.write("<h3> Your list have been added.</h3>");
+               document.write("<h4> We will contact you as soon as posible.</h4>");
+            </script>
+            <div>
+               <a href="index.html" class="btn button_">GO Home</a>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <footer>
+      <div class="row container">
+        <div class="col-md-3">
+          <i class="fa-solid fa-location-dot"></i>
+          <h3>Find us</h3>
+          <p>Address</p>
+          <p>City, State, USA</p>
+        </div>
+        <div class="col-md-3">
+          <i class="fa-solid fa-phone-volume"></i>
+          <h3>Call us</h3>
+          <p>+1 999 999 9999</p>
+        </div>
+        <div class="col-md-3">
+          <i class="fa-solid fa-envelope"></i>
+          <h3>Email us</h3>
+          <p>DevVoy@email.com</p>
+        </div>
+        <div class="col-md-3">
+          <h3>Follow us</h3>
+          <p>Be Inspired</p>
+          <div class="social_media">
+            <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row copyright">
+        <p>&copy; 2023 DisVoy. All rights reserved.</p>
+        <p>Made by Zohra HANAFI</p>
+      </div>
+    </footer>
+
+
+</body>
+
+</html>
